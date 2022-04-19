@@ -1,6 +1,10 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0014)about:internet -->
-<html lang="en"><head>
+<html lang="en">
+
+
+
+<head>
         <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="8t3OjyK4t5L-gUDgAgjjfe1En9eTyh4qltQRa97gJzg" />
@@ -13,14 +17,12 @@
 
       gtag('config', 'G-T7S18EPGVF');
     </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>GreatMark</title>
     <!-- Style -->
     <style type="text/css">
- @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-         *{
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');        *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -45,6 +47,8 @@
 
 a:hover{cursor: pointer;}
 body{overflow-x: hidden;}
+input[type='text']{cursor: initial;}
+input[type='submit']{cursor: pointer;}
 
 .color_light_1{color: var(--color_light_1);}
 .color_light_2{color: var(--color_light_2);}
@@ -59,11 +63,12 @@ body{overflow-x: hidden;}
 .color_theme_2_50{color: var(--color_theme_2_50);}
 .color_theme_3{color: var(--color_theme_3);}
 
-.h1{font-size:15vmin;}
-.h2{font-size:10vmin;}
-.h3{font-size:5.5vmin;}
-.p3{font-size: 3vmin;}
-.p4{font-size: 2.5vmin;}
+.h1{font-size: 8vh;}
+.h2{font-size: 6vh;}
+.h3{font-size: 5vh;}
+.h4{font-size: 4vh;}
+.h5{font-size: 3vh;}
+.h6{font-size: 2.5vh;}
 
 .not_copyable{user-select: none;}
 
@@ -116,6 +121,32 @@ body{overflow-x: hidden;}
     -moz-background-clip: text;
     -o-background-clip: text;
     -ms-background-clip: text;
+}        html{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color_theme_2) var(--color_theme_2_50);
+}
+html::-webkit-scrollbar{
+    width: 0.8vw;
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--color_theme_2_50);
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color_theme_2);
+    border-radius: 1.5vh;
+}
+.filter_options_div{
+    scrollbar-width: thin;
+}
+.filter_options_div::-webkit-scrollbar{
+    width: 0.8vw;
+}
+.filter_options_div::-webkit-scrollbar-track {
+    background-color: var(--color_theme_2_50);
+}
+.filter_options_div::-webkit-scrollbar-thumb {
+    background-color: var(--color_theme_2);
+    border-radius: 1.5vh;
 }        .intro{
     text-align: center;
     padding: 25vh 2.5vw 20vh 2.5vw;
@@ -178,7 +209,6 @@ body{overflow-x: hidden;}
     position: fixed;
     background-color: var(--color_theme_3);
     height: 100vh;
-    border-right: 0.5px solid var(--color_theme_2);
 }
 .filter_options_div_display{display: none;}        .main_page_body{
     background-color: var(--color_theme_3);
@@ -195,7 +225,7 @@ body{overflow-x: hidden;}
     margin: 2vh;
     display: inline-block;
     width: 40vmin;
-    height: 65vh;
+    height: 68.5vmin;
     box-shadow: var(--color_light_3) 0px 0.4vmin 1.6vmin 0px;
     border-radius: 0.5vh;
 }
@@ -247,36 +277,33 @@ body{overflow-x: hidden;}
 .brands_lookup_button:focus{
     cursor: pointer;
     background-color: var(--color_theme_1);
-}        /*Tablet..............................................*/
-@media only screen and (max-width:75vh) {
+}        @media only screen and (max-width:75vh) {
     .brands_lookup{
         width: 70vmin;
-        height: 80vh;
+        height: 120vmin;
     }
-    .h3{font-size:6.5vmin;}
-    .p3{font-size: 5vmin;}
-    .p4{font-size: 4vmin;}
 }
-/*Mobile..............................................*/
-@media only screen and (max-width:57vh) {
-    .brands_lookup{
-        width: 99%;
-        margin: 0px;
-        margin-top: 2vh;
-        height: 80vh;
-    }
+@media only screen and (max-width:50vh) {
+    .h1{font-size: 10vmin;}
     .h2{font-size: 8vmin;}
-    .h3{font-size:10.5vmin;}
-    .p3{font-size: 4.6vmin;}
-    .p4{font-size: 4vmin;}
-    .h3{font-size: 8.5vmin;}
+    .h3{font-size: 6vmin;}
+    .h4{font-size: 5vmin;}
+    .h5{font-size: 4vmin;}
+    .h6{font-size: 3.5vmin;}
+    .filter_options_div{width: 99.5vw;}
 }    </style>
 </head>
 
 
-<body class="section_non_collapsable" style="height: fit-content; overflow: hidden scroll;">
+
+<body class="section_non_collapsable">
+
+
+
+
 
     <section class="section_collapsable">
+
         <!-- Java Script -->
         <script type="text/javascript">
             function Start() {
@@ -307,6 +334,7 @@ function show_overlay() {
 	section_non_collapsable.style.overflow = 'hidden';
     overlay_all_div.style.display = 'block'
     filter_options_div.style.width = "100vw";
+    filter_options_div.style.borderRight = "0.5px solid var(--color_theme_2)";
     if (screen.height < screen.width) {filter_options_div.style.width = "75vh";}
     filter_options_div_display.style.display = "block";
 }
@@ -315,6 +343,7 @@ function self_hidden() {
 	section_non_collapsable.style.overflowY = 'scroll';
 	overlay_all_div.style.display = 'none'
     filter_options_div.style.width = "0px";
+    filter_options_div.style.borderRight = "none";
     filter_options_div_display.style.display = "none";
 }
 
@@ -334,62 +363,47 @@ document.addEventListener('mousemove' , Move)
 document.addEventListener('mouseup', End)
 document.addEventListener('mouseleave', End)
 // ................................................................        </script>
-        <div onclick="self_hidden();" class="overlay_all" style="display: none;"></div>
-        <div class="filter_options_div transition_in_and_out" style="width: 0px;">
+
+        <div onclick="self_hidden();" class="overlay_all"></div>
+        <div class="filter_options_div transition_in_and_out">
             <div class="menu_container">
                 <table>
-                    <tbody><tr>
+                    <tr>
                         <td>
                             <span onclick="self_hidden();" title="Close Advanced Search" class="to_left_text not_copyable round_icon_btn material-icons h3 transition_in_and_out">close</span>
                         </td>
                         <td>
-                        <span class="filter_options_div_display p3 color_dark_2 not_copyable" style="display: none;">Advanced Search</span>
+                        <span class="filter_options_div_display h5 color_dark_2 not_copyable">Advanced Search</span>
                         </td>
                     </tr>
-                </tbody></table>
+                </table>
             </div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptateididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptateididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptateididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.10</span>
+
+            <div class="AS_or_filter_forum_container">
+                <script type="text/javascript">
+                    let AS_or_filter_forum_container = document.querySelector('.AS_or_filter_forum_container');
+                    var filter_clicked = 0;
+                    function AS_first_timefunc() {
+                        if (filter_clicked == 0) {
+                            AS_or_filter_forum_container.innerHTML = 'Working on it....';
+                            filter_clicked = 1;
+                        }
+                    }
+                </script>
+            </div>
+
         </div>
     </section>
 
 
 
 
+
+
     <section>
-        <div class="intro" style="background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(&quot;main_bg/landscape 1080.jpg&quot;) center center / cover no-repeat;">
-            <b><span class="h1 color_light_1 not_copyable">Great</span><span class="h1 color_light_1 not_copyable underline">Mark</span></b>
-            <p class="p3 color_light_1 not_copyable">Highlight's the Best Prices, Great Products &amp; Top Business</p>
+        <div class="intro">
+            <b><span class="h1 color_light_1 not_copyable">Great</span><span class="h1 color_light_1 not_copyable">Mark</span></b>
+            <p class="h5 color_light_1 not_copyable">Highlight's the Best Prices, Great Products & Top Business</p>
             <!-- Java Script -->
             <script type="text/javascript">
                 // Function
@@ -483,74 +497,33 @@ window.addEventListener("resize", function() {
 
 
 
+
+
     <section>
+
         <div class="sub_intro">
-            <span class="h2 not_copyable gradient_color_fix gradient_theme_color">Explore GreatMark</span>
+            <span class="h3 not_copyable gradient_color_fix gradient_theme_color">Explore GreatMark</span>
             <div class="seperate_line seperate_line_theme_color"></div>
             <div class="to_left_text catagory_directory_show_div">
-                <span class="p4 color_theme_2"><b>Catagory -&gt; NVMe Internal SSD:</b></span>
-                <div class="catagory_deccribe p4 color_dark_2">SSD or "Solid State Drive" is a Storage Device with much Faster &amp; Reliable Data Read/Write Speeds as compared to HDD or "Hard Disk Drive". NVM Express or "NVMe" is a cutting Edge "high Speed" Data storage Device with best Performance &amp; efficiency.<br>It makes it "Ideal for gaming" &amp; "High Resolution video editing". Not to forget that NVMe Internal SSDs have roughly the same bandwidth as DDR4 RAMs.</div>
+                <span class="h5 color_theme_2"><b>Catagory -> NVMe Internal SSD:</b></span>
+                <div class="catagory_deccribe h6 color_dark_2">SSD or "Solid State Drive" is a Storage Device with much Faster & Reliable Data Read/Write Speeds as compared to HDD or "Hard Disk Drive". NVM Express or "NVMe" is a cutting Edge "high Speed" Data storage Device with best Performance & efficiency.<br>It makes it "Ideal for gaming" & "High Resolution video editing". Not to forget that NVMe Internal SSDs have roughly the same bandwidth as DDR4 RAMs.</div>
             </div>
         </div>
-
-
 
         <div class="menu_container to_right_text">
-            <span onclick="show_overlay();" title="Advanced Search" class="not_copyable round_icon_btn filter_icon_adjust material-icons h3 transition_in_and_out">filter_alt</span>
+            <span onclick="show_overlay(),AS_first_timefunc();" title="Advanced Search" class="not_copyable round_icon_btn filter_icon_adjust material-icons h3 transition_in_and_out">filter_alt</span>
         </div>
-
-
 
         <div class="main_page_body">
+            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/51rJ3F7erxL._AC_SY355_.jpg');" aria-label="PNY 250 GB NVMe SSD Gen3 at the price of USD 44.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY XLR8 CS3030 250GB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read up to 3,500 - M280CS3030-250-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">44.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 250 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 250 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/41zJdNLJWcL._AC_SX355_.jpg');" aria-label="PNY 500 GB NVMe SSD Gen3 at the price of USD 66.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY XLR8 CS3030 500GB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read up to 3,500 - M280CS3030-500-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">66.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 500 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 500 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/41zJdNLJWcL._AC_SX355_.jpg');" aria-label="PNY 1024 GB NVMe SSD Gen3 at the price of USD 109 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY XLR8 CS3030 1TB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read Up to 3,500 - M280CS3030-1TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">109</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 1024 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 1024 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/51rJ3F7erxL._AC_SY355_.jpg');" aria-label="PNY 2048 GB NVMe SSD Gen3 at the price of USD 194.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY XLR8 CS3030 2TB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read up to 3,500 - M280CS3030-2TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">194.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 2048 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 2048 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/51QIZEbmFgL._AC_SY355_.jpg');" aria-label="PNY 4096 GB NVMe SSD Gen3 at the price of USD 599.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY XLR8 CS3030 4TB M.2 NVMe Internal Solid State Drive (SSD) - M280CS3030-4TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">599.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 4096 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 4096 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/513I06iMZmL._AC_SY355_.jpg');" aria-label="PNY 500 GB NVMe SSD Gen3 at the price of USD 57.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS2130 500GB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read up to 3,500 MB/s - M280CS2130-500-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">57.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 500 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 500 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/513I06iMZmL._AC_SY355_.jpg');" aria-label="PNY 1024 GB NVMe SSD Gen3 at the price of USD 104.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS2130 1TB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read up to 3,500 - M280CS2130-1TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">104.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 1024 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 1024 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/513I06iMZmL._AC_SY355_.jpg');" aria-label="PNY 2048 GB NVMe SSD Gen3 at the price of USD 187.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS2130 2TB M.2 PCIe NVMe Gen3 x4 Internal Solid State Drive (SSD), Read up to 3,500 - M280CS2130-2TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">187.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 2048 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 2048 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/513I06iMZmL._AC_SY355_.jpg');" aria-label="PNY 4000 GB NVMe SSD Gen3 at the price of USD 479.03 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS2130 4TB M.2 NVMe Internal Solid State Drive (SSD) M280CS2130-4TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">479.03</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 4000 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 4000 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/51xrtj1siQS._AC_SY355_.jpg');" aria-label="PNY 8000 GB NVMe SSD Gen3 at the price of USD 1129.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS2130 8TB M.2 NVMe Internal Solid State Drive (SSD) - M280CS2130-8TB-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">1129.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 8000 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 8000 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/71Oa8PZjD5L._AC_SY355_.jpg');" aria-label="PNY 250 GB NVMe SSD Gen3 at the price of USD 33.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS1030 250GB M.2 NVMe PCIe Gen3 x4 Internal Solid State Drive (SSD) - M280CS1030-250-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">33.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 250 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 250 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div><div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url('https://m.media-amazon.com/images/I/51CqUFxbhuL._AC_SY355_.jpg');" aria-label="PNY 500 GB NVMe SSD Gen3 at the price of USD 54.99 Great Mark"></div><div title="#GreatMark #Great #Mark #internal #nvme #ssd #generation #gen #best GreatMark,Great,Mark,internal,nvme,ssd,generation,gen,best" class="brands_lookup_second" style="background-image: url('brand_logos_svg/21.svg');" aria-label="PNY Next Generation NVMe SSD #Great-Mark #greatmark #great #mark #ssd"></div><div class="brands_lookup_description"><div class="h6 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">PNY CS1030 500GB M.2 NVMe PCIe Gen3 x4 Internal Solid State Drive (SSD) - M280CS1030-500-RB </div></div><div class="brands_lookup_describe_specs"><span title="price in USD" class="h5 color_theme_1">$ </span><span title="Is it the best price ? See Details." class="h6 gradient_theme_color gradient_color_fix">54.99</span><span title="Capacity in Gigabytes" class="h6 color_dark_2"> 500 GB</span><span title="Generation" class="h5 color_theme_1"> Gen3</span></div><div class="h6 brands_lookup_bottom"><a title="Show PNY 500 GB NVMe SSD Gen3 Details" class="color_light_1 brands_lookup_button transition_in_and_out" href="">Show Details</a></div></div>        </div>
 
-            
-            <div class="brands_lookup transition_in_and_out">
-                <div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/51KhkaQ5siL._AC_SY355_.jpg&quot;);" aria-label="SK hynix 500 GB NVMe SSD Gen3 at the price of USD 64.99"></div>
-                <div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/5.svg&quot;);" aria-label="SK hynix Next Generation NVMe SSD"></div>
-                <div class="brands_lookup_description">
-                    <div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">SK hynix Gold P31 500GB PCIe NVMe Gen3 M.2 2280 Internal SSD | Up to 3500MB/S | Compact M.2 SSD Form Factor SK hynix SSD | Internal Solid State Drive with 128-Layer NAND Flash </div>
-                </div>
-                <div class="brands_lookup_describe_specs">
-                    <span class="p3 color_theme_1">$ </span>
-                    <span class="p4 gradient_theme_color gradient_color_fix">64.99</span>
-                    <span class="p4 color_dark_2"> 500 GB</span>
-                    <span class="p3 color_theme_1"> Gen3</span>
-                </div>
-                    <div class="p4 brands_lookup_bottom">
-                        <a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a>
-                    </div>
-            </div>
-
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71u-Ggd7jzL._AC_SY355_.jpg&quot;);" aria-label="SK hynix 1000 GB NVMe SSD Gen3 at the price of USD 109.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/5.svg&quot;);" aria-label="SK hynix Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">SK hynix Gold P31 1TB PCIe NVMe Gen3 M.2 2280 Internal SSD | Up to 3500MB/S | Compact M.2 SSD Form Factor SK hynix SSD | Internal Solid State Drive with 128-Layer NAND Flash </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">109.99</span><span class="p4 color_dark_2"> 1000 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71u-Ggd7jzL._AC_SY355_.jpg&quot;);" aria-label="SK hynix 2000 GB NVMe SSD Gen3 at the price of USD 208.24"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/5.svg&quot;);" aria-label="SK hynix Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">SK hynix Gold P31 2TB PCIe NVMe Gen3 M.2 2280 Internal SSD l Up to 3500MB/S l Compact M.2 SSD Form Factor SK hynix SSD - Internal Solid State Drive with 128-Layer NAND Flash </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">208.24</span><span class="p4 color_dark_2"> 2000 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/81jt27g8JGL._AC_SX355_.jpg&quot;);" aria-label="Samsung 250 GB NVMe SSD Gen3 at the price of USD 52.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/25.svg&quot;);" aria-label="Samsung Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Samsung 970 EVO Plus Series - 250GB PCIe NVMe - M.2 Internal SSD (MZ-V7S250B/AM) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">52.99</span><span class="p4 color_dark_2"> 250 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/81ZWWtwWf6L._AC_SX355_.jpg&quot;);" aria-label="Samsung 500 GB NVMe SSD Gen3 at the price of USD 69.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/25.svg&quot;);" aria-label="Samsung Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">SAMSUNG 970 EVO Plus SSD 500GB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology (MZ-V7S500B/AM) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">69.99</span><span class="p4 color_dark_2"> 500 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/813bvfaxuAL._AC_SX355_.jpg&quot;);" aria-label="Samsung 2048 GB NVMe SSD Gen3 at the price of USD 199.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/25.svg&quot;);" aria-label="Samsung Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">SAMSUNG 970 EVO Plus SSD 2TB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology (MZ-V7S2T0B/AM) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">199.99</span><span class="p4 color_dark_2"> 2048 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/61I2wlGLE2L._AC_SY355_.jpg&quot;);" aria-label="Microfrom 256 GB NVMe SSD Gen3 at the price of USD 32.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/18.svg&quot;);" aria-label="Microfrom Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">MICROFROM 256GB F11N M.2 SSD NVME PCIe SSD Internal Solid State Drive PCIe Gen3X4, M.2 NVMe 1.3, SSD M.2 TLC NAND Flash Up to Read/Write 1,700/800MB/s for PC Gaming Laptop </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">32.99</span><span class="p4 color_dark_2"> 256 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/618BLwpSvuL._AC_SY355_.jpg&quot;);" aria-label="Microfrom 512 GB NVMe SSD Gen3 at the price of USD 53.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/18.svg&quot;);" aria-label="Microfrom Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">MICROFROM 512GB F11N M.2 SSD NVME PCIe SSD Internal Solid State Drive PCIe Gen3X4, M.2 NVMe 1.3, SSD M.2 TLC NAND Flash Up to Read/Write 1,600/1,400MB/s for PC Gaming Laptop </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">53.99</span><span class="p4 color_dark_2"> 512 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/618bpwi6W2L._AC_SY355_.jpg&quot;);" aria-label="Microfrom 1024 GB NVMe SSD Gen3 at the price of USD 79.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/18.svg&quot;);" aria-label="Microfrom Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">MICROFROM 1TB F11N M.2 SSD NVME PCIe SSD Internal Solid State Drive PCIe Gen3X4, M.2 NVMe 1.3, SSD M.2 TLC NAND Flash Up to Read/Write 2,150/1,800MB/s for PC Gaming Laptop </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">79.99</span><span class="p4 color_dark_2"> 1024 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71rTa0S8xDS._AC_SX355_.jpg&quot;);" aria-label="Kingston 250 GB NVMe SSD Gen3 at the price of USD 34.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/1.svg&quot;);" aria-label="Kingston Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Kingston NV1 250G M.2 2280 NVMe PCIe Internal SSD Up to 2100 MB/s SNVS/250G </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">34.99</span><span class="p4 color_dark_2"> 250 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71rTa0S8xDS._AC_SX355_.jpg&quot;);" aria-label="Kingston 500 GB NVMe SSD Gen3 at the price of USD 55.28"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/1.svg&quot;);" aria-label="Kingston Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Kingston NV1 500G M.2 2280 NVMe PCIe Internal SSD Up to 2100 MB/s SNVS/500G </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">55.28</span><span class="p4 color_dark_2"> 500 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71rTa0S8xDS._AC_SX355_.jpg&quot;);" aria-label="Kingston 1024 GB NVMe SSD Gen3 at the price of USD 88.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/1.svg&quot;);" aria-label="Kingston Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Kingston NV1 1TB M.2 2280 NVMe PCIe Internal SSD Up to 2100 MB/s SNVS/1000G </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">88.99</span><span class="p4 color_dark_2"> 1024 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71rTa0S8xDS._AC_SX355_.jpg&quot;);" aria-label="Kingston 2048 GB NVMe SSD Gen3 at the price of USD 177.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/1.svg&quot;);" aria-label="Kingston Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Kingston NV1 2TB M.2 2280 NVMe PCIe Internal SSD Up to 2100 MB/s SNVS/2000G </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">177.99</span><span class="p4 color_dark_2"> 2048 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71dNq2zT95L._AC_SY355_.jpg&quot;);" aria-label="Sabrent 256 GB NVMe SSD Gen3 at the price of USD 49.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/26.svg&quot;);" aria-label="Sabrent Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Sabrent 256GB Rocket NVMe PCIe M.2 2280 Internal SSD High Performance Solid State Drive (SB-ROCKET-256) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">49.99</span><span class="p4 color_dark_2"> 256 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71QTFjeWeBL._AC_SY355_.jpg&quot;);" aria-label="Sabrent 512 GB NVMe SSD Gen3 at the price of USD 69.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/26.svg&quot;);" aria-label="Sabrent Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Sabrent 512GB Rocket NVMe PCIe M.2 2280 Internal SSD High Performance Solid State Drive (SB-ROCKET-512) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">69.99</span><span class="p4 color_dark_2"> 512 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71NTyUEAuSL._AC_SY355_.jpg&quot;);" aria-label="Sabrent 1024 GB NVMe SSD Gen3 at the price of USD 99.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/26.svg&quot;);" aria-label="Sabrent Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Sabrent 1TB Rocket NVMe PCIe M.2 2280 Internal SSD High Performance Solid State Drive (SB-ROCKET-1TB) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">99.99</span><span class="p4 color_dark_2"> 1024 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71dM+YShvmL._AC_SY355_.jpg&quot;);" aria-label="Sabrent 2048 GB NVMe SSD Gen3 at the price of USD 199.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/26.svg&quot;);" aria-label="Sabrent Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Sabrent 2TB Rocket NVMe PCIe M.2 2280 Internal SSD High Performance Solid State Drive (SB-ROCKET-2TB) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">199.99</span><span class="p4 color_dark_2"> 2048 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-            <div class="brands_lookup transition_in_and_out"><div class="brands_lookup_top" style="background-image: url(&quot;https://m.media-amazon.com/images/I/71g-S-3aAjL._AC_SY355_.jpg&quot;);" aria-label="Sabrent 4096 GB NVMe SSD Gen3 at the price of USD 649.99"></div><div class="brands_lookup_second" style="background-image: url(&quot;brand_logos_svg/26.svg&quot;);" aria-label="Sabrent Next Generation NVMe SSD"></div><div class="brands_lookup_description"><div class="p4 gradient_light_and_dark_color brands_lookup_describe gradient_color_fix">Sabrent 4TB Rocket NVMe PCIe M.2 2280 Internal SSD High Performance Solid State Drive (SB-ROCKET-4TB) </div></div><div class="brands_lookup_describe_specs"><span class="p3 color_theme_1">$ </span><span class="p4 gradient_theme_color gradient_color_fix">649.99</span><span class="p4 color_dark_2"> 4096 GB</span><span class="p3 color_theme_1"> Gen3</span></div><div class="p4 brands_lookup_bottom"><a class="color_light_1 brands_lookup_button transition_in_and_out" href="http://localhost/my_web/NEW/Home/">Show Details</a></div></div>
-
-
-
-
-
-
-
-
-
-        </div>
     </section>
 
 
+
+
+
+    <!-- Java Script -->
     <script type="text/javascript">
         let overlay_all_div = document.querySelector('.overlay_all');
 let filter_options_div = document.querySelector('.filter_options_div');
@@ -559,7 +532,11 @@ let section_non_collapsable = document.querySelector('.section_non_collapsable')
 var overlayed = overlay_all_div.style.display;
 var isDragging = false;
 var start_x,last_x,triggered;
-var window_height = screen.height * 0.5;    </script>
+var window_height = screen.height * 0.5;    
+</script>
 
 
-</body></html>
+
+
+</body>
+</html>
