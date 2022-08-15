@@ -1,23 +1,8 @@
-<!DOCTYPE html><html><style type="text/css">
-#dpi {
-	background-color: #eee;
-    height: 1in;
-    /*left: -100%;*/
-    position: absolute;
-    /*top: -100%;*/
-    width: 1in;
-}
-</style><body><div id="dpi"></div></body><script type="text/javascript">
-var w = window.innerWidth;
-document.getElementById("dpi").innerHTML = document.getElementById("dpi").offsetHeight;
-// console.log(document.getElementById("dpi").offsetHeight);
-
-var win = window,doc = document,docElem = doc.documentElement,body = doc.getElementsByTagName('body')[0];
-x = win.innerWidth || docElem.clientWidth || body.clientWidth;
-y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+<!DOCTYPE html><html><body></body>
+<script type="text/javascript">
+var w = window,d = document,de = d.documentElement,body = d.getElementsByTagName('body')[0];
+x = w.innerWidth || de.clientWidth || body.clientWidth;
+y = w.innerHeight|| de.clientHeight|| body.clientHeight;
 console.log(x,y);
-
-
-
-
+d.getElementsByTagName('body')[0].innerHTML = `index.php?csiw=${x}&csih=${y}`;
 </script></html>
