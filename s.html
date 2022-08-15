@@ -21,10 +21,22 @@ y = w.innerHeight|| de.clientHeight|| b.clientHeight;
 window.Detector = (function(window, document, undefined){var maxRatio = 8.0;Detector = {};Detector.screens = {};Detector.prefix = function() {if (window.matchMedia) {var prefixes = '-webkit-min- min--moz- -o-min- -ms-min- -khtml-min- '.split(' ');var mediaQuery = 'device-pixel-ratio:1.0';for (var i=0; i<prefixes.length; i++) {if (window.matchMedia('(' + prefixes[i] + mediaQuery + ')').matches) {return prefixes[i];}}}return undefined;}();Detector.devicePixelRatio = function() {if (Detector.prefix) {var maxdpr = 1.0;var i=1.0;for (; i<=maxRatio; i=parseFloat((i+0.1).toFixed(1))) {if (window.matchMedia('(' + Detector.prefix + 'device-pixel-ratio:' + i.toFixed(1) + ')').matches===false) {break;} else {maxdpr = i;}}return maxdpr;}return undefined;}();Detector.dppx = function() {if (window.matchMedia) {var maxdppx = 1.0;var i=1.0;for (; i<=maxRatio; i=parseFloat((i+0.1).toFixed(1))) {if (window.matchMedia('(min-resolution:' + i.toFixed(1) + 'dppx)').matches===false) {break;} else {maxdppx = i;}}return maxdppx;}return undefined;}();Detector.dpi = Detector.dppx*96;var test = {'ldpi': 120, 'mdpi': 160, 'hdpi': 240, 'xhdpi': 320, 'xxhdpi': 480, 'xxxhdpi': 640};for (var key in test) {if (test.hasOwnProperty(key)) {Detector.screens[key] = Detector.dpi >= test[key];}}return Detector;})(this, this.document);
 var cdpi = Detector.dpi;
 
-d.getElementsByTagName('h1')[0].style.fontSize = `${0.405*cdpi}px`;
-d.getElementsByTagName('h2')[0].style.fontSize = `${0.282*cdpi}px`;
-d.getElementsByTagName('h3')[0].style.fontSize = `${0.219*cdpi}px`;
-d.getElementsByTagName('h4')[0].style.fontSize = `${0.188*cdpi}px`;
-d.getElementsByTagName('h5')[0].style.fontSize = `${0.167*cdpi}px`;
-d.getElementsByTagName('h6')[0].style.fontSize = `${0.151*cdpi}px`;
+if (x/y > 1.2) {
+	var Multiplier = 1;
+	console.log('Landscape')
+}
+else if (x/y < 0.9) {
+	var Multiplier = 0.9;
+	console.log('Potrait')
+}
+else {
+	var Multiplier = 1;
+	console.log('Square')
+}
+d.getElementsByTagName('h1')[0].style.fontSize = `${(0.405*cdpi)*Multiplier}px`;
+d.getElementsByTagName('h2')[0].style.fontSize = `${(0.282*cdpi)*Multiplier}px`;
+d.getElementsByTagName('h3')[0].style.fontSize = `${(0.219*cdpi)*Multiplier}px`;
+d.getElementsByTagName('h4')[0].style.fontSize = `${(0.188*cdpi)*Multiplier}px`;
+d.getElementsByTagName('h5')[0].style.fontSize = `${(0.167*cdpi)*Multiplier}px`;
+d.getElementsByTagName('h6')[0].style.fontSize = `${(0.151*cdpi)*Multiplier}px`;
 </script></html>
