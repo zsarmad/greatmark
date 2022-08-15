@@ -5,8 +5,14 @@
 *{font-family: DeliciousRoman, Helvetica, Arial, sans-serif;}
 *{font-size: 16px;letter-spacing: normal;font-weight: 400;}
 *{text-overflow: ellipsis;}
+div{
+	margin: 10px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
 </style>
 <body>
+<div></div>
 <h1>Search Google or type a URL</h1>
 <h2>Search Google or type a URL</h2>
 <h3>Search Google or type a URL</h3>
@@ -39,4 +45,6 @@ d.getElementsByTagName('h3')[0].style.fontSize = `${(0.219*cdpi)*Multiplier}px`;
 d.getElementsByTagName('h4')[0].style.fontSize = `${(0.188*cdpi)*Multiplier}px`;
 d.getElementsByTagName('h5')[0].style.fontSize = `${(0.167*cdpi)*Multiplier}px`;
 d.getElementsByTagName('h6')[0].style.fontSize = `${(0.151*cdpi)*Multiplier}px`;
+d.getElementsByTagName('div')[0].style.width = `${cdpi}px`;
+d.getElementsByTagName('div')[0].style.height = `${cdpi}px`;
 </script></html>
